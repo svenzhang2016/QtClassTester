@@ -7,6 +7,8 @@ namespace Ui {
 class TextTesterDialog;
 }
 class GlyphRunTester;
+class StaticTextTester;
+class TextOptionTester;
 class TextTesterDialog : public QDialog
 {
     Q_OBJECT
@@ -16,11 +18,18 @@ public:
     ~TextTesterDialog();
 
 private slots:
-    void on_pushButton_clicked();
+    void on_pushButtonGlyphRun_clicked();
+
+    void on_pushButtonStaticText_clicked();
+
+
+    void on_pushButtonTextOption_clicked();
 
 private:
     Ui::TextTesterDialog *ui;
     GlyphRunTester *m_GlyphRunTester;
+    StaticTextTester *m_StaticTextTester;
+    TextOptionTester *m_TextOptionTester;
 };
 
 #endif // TEXTTESTERDIALOG_H

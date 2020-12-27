@@ -13,17 +13,43 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="pushButtonGlyphRun">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>20</y>
-     <width>91</width>
-     <height>31</height>
+     <x>9</x>
+     <y>129</y>
+     <width>75</width>
+     <height>23</height>
     </rect>
    </property>
    <property name="text">
     <string>GlyphRun</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonStaticText">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>278</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>StaticText</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonTextOption">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>350</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextOption</string>
    </property>
   </widget>
  </widget>
