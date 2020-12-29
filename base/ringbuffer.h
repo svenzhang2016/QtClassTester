@@ -4,10 +4,10 @@
 #include <QByteArray>
 #include <QList>
 
-class QRingBuffer
+class RingBuffer
 {
 public:
-    inline QRingBuffer(int growth = 4096)
+    inline RingBuffer(int growth = 4096)
         : basicBlockSize(growth)
     {
         buffers << QByteArray();

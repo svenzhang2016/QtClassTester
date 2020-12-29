@@ -1,4 +1,7 @@
 #include "textobjecttester.h"
+#include <QTextFrame>
+#include <QTextObject>
+
 
 TextObjectTester::TextObjectTester()
 {
@@ -12,7 +15,7 @@ void TextObjectTester::clear()
     {
         if(*objectIt != m_Frame)
         {
-            delete *objectIt;
+//            delete *objectIt;
             objectIt = m_Objects.erase(objectIt);
         }
         else
