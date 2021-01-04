@@ -3,6 +3,7 @@
 #include "glyphruntester.h"
 #include "statictexttester.h"
 #include "textoptiontester.h"
+#include "basictimertester.h"
 
 TextTesterDialog::TextTesterDialog(QWidget *parent) :
     QDialog(parent),
@@ -33,4 +34,10 @@ void TextTesterDialog::on_pushButtonTextOption_clicked()
 {
     m_TextOptionTester = new TextOptionTester();
     m_TextOptionTester->show();
+}
+
+void TextTesterDialog::on_pushButton_clicked()
+{
+    m_BasicTimerTester = new BasicTimerTester();
+    m_BasicTimerTester->start();
 }

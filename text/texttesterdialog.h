@@ -9,6 +9,7 @@ class TextTesterDialog;
 class GlyphRunTester;
 class StaticTextTester;
 class TextOptionTester;
+class BasicTimerTester;
 class TextTesterDialog : public QDialog
 {
     Q_OBJECT
@@ -25,11 +26,14 @@ private slots:
 
     void on_pushButtonTextOption_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::TextTesterDialog *ui;
     GlyphRunTester *m_GlyphRunTester;
     StaticTextTester *m_StaticTextTester;
     TextOptionTester *m_TextOptionTester;
+    BasicTimerTester *m_BasicTimerTester;
 };
 
 #endif // TEXTTESTERDIALOG_H
