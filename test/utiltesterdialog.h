@@ -17,16 +17,21 @@ public:
     ~UtilTesterDialog();
 
     void noblockDelay_test();
+    void noblockWait();
 
 private slots:
     void stop();
 
     void on_pushButtonNoblockDelay_clicked();
 
+signals:
+    void stopWait();
+
 private:
     Ui::UtilTesterDialog *ui;
     QTimer *timer_;
     QElapsedTimer elapsedTimer_;
+    int loopTimes_{0};
 };
 
 #endif // UTILTESTERDIALOG_H
