@@ -16,6 +16,7 @@ QMAKE_CXXFLAGS += -std=c++0x
 include(./text/text.pri)
 include(./base/base.pri)
 include(./thread/thread.pri)
+include(./test/test.pri)
 
 SOURCES += main.cpp\
         mainwindow.cpp
